@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.header {
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+.left, .center, .right {
+  display: inline-block;
+  text-align: middle;
+}
+.left {
+  width: 33%;
+  text-align: left;
+}
+.center {
+  width: 34%;
+  text-align: center;
+}
+.right {
+  width: 33%;
+  text-align: right;
+}
+.left p,
+.right p {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 12px;
+}
+.logo {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.Phototitle {
+    
+}
