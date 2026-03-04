@@ -8,7 +8,7 @@ body {
 }
 .left, .center, .right {
   display: inline-block;
-  text-align: middle;
+  text-align: top;
 }
 .left {
   width: 33%;
