@@ -11,6 +11,5 @@ Below is a photo of me when I was younger:
 
 This is from my life scroll project. Made me reminisce my child years.
 
-My favorite project is the tutorial on the web -
 
 

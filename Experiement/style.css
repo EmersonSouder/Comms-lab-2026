@@ -1,0 +1,22 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.container{
+    display: flex;
+    outline: 3px dotted;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    width: 200px;
+    outline: 1px dotted; color: antiquewhite;
+}
+
+.second{
+    
+}
