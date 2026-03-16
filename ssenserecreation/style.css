@@ -518,6 +518,31 @@ body {
   text-decoration: underline;
 }
 
+.error-footer {
+  text-align: center;
+  padding: 600px 0 40px 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-errorlinks p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.footer-linkerror {
+  margin-top: 30px;
+}
+
+.footer-linkerror p {
+  display: inline-block;
+  margin: 0 14px;
+  font-size: 11px;
+  color: #999;
+}
+
 /* video page */
 
 .full-gif{
