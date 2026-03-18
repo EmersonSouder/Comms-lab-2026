@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    background-color: mistyrose;
+}
+#Lorem{
+    transform: rotate(7deg);
+    transition: all 5s linear;
+}
+#Lorem:hover{
+    background-color: brown;
+    color: mediumvioletred;
+}
+#watermelon{
+    /* display: inline-block; */
+    /* transform: translate(20px, 10px); */
+}
+#water{
+    margin-left: 40px;
+    font-size: 20px;
+}
+#water span{
+    transition: transform 6s ease-in-out;
+    display: inline-block;
+    transform: translate(0px,0px);
+}
+#water:hover span{
+    display: inline-block;
+    transform: translate(10px,40px);
+}
+@keyframes myskewing{
+    from{
+        transform: skew(0deg,0deg) scale(1)
+    }
+    to{
+        transform: skew(20deg,30deg) scale(.5);
+    }
+}
+img{
+    animation: myskewing 3s infinite alternate;
+}
+@keyframes fly {
+    0%{
+        transform: translate(0px,0px);
+    }
+    10%{
+        transform: translate(40px,300px);
+    }
+    20%{
+        transform: translate(30px,500px);
+    }
+    50%{
+        transform: translate(10px,40px);
+    }
+    100%{
+        transform: translate(20px,100px);
+        color: aquamarine;
+        font-size: 45px;
+    }
+}
+#baka{
+    transform: translate(0px,0px);
+    animation: fly 10s infinite;
+    color: black;
+}
+
+
+
