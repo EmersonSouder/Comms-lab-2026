@@ -2,7 +2,7 @@
 ## here you find my projects:
 These are the projects I made
 - Journey through spreadsheets
-- [Life scroll](astoryinmylife)
+- [Life scroll](Astoryinmylife)
 - [Tutorial on the web](Tutorial)
 
 Below is a photo of me when I was younger: 
