@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    background-color: lightskyblue;
+}
+.head-title {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: ghostwhite;
+}
+.sub-head {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: hotpink;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chaosButton {
+    padding: 25px 50px;
+    font-size: 24px;
+    border-radius: 12px;
+}
+
+.changeButton {
+    background-color: black;
+    color: white;
+}
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.nextButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    background-color: deepskyblue;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: black;
+    transition: transform .5s linear;
+}
+
+.moveRight{
+    transform: translate(200px, 0px);
+}
+
+
