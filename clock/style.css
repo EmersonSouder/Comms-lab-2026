@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+.clock-container {
+    position: relative;
+    width: 1000px;
+}
+
+.bg {
+    width: 150%;
+    display: block;
+}
+
+.wrapper {
+    width: 1000px;
+    position: relative;
+}
+
+.wrapper img {
+    width: 100%;
+    display: block;
+}
+
+.hours,
+.minutes,
+.seconds {
+    width: 50px;
+    height: 20px;
+
+    position: absolute;
+
+    color: rgb(197, 18, 18);
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.arrow-hours,
+.arrow-minutes,
+.arrow-seconds {
+    width: 30px;
+    height: 20px;
+
+    position: absolute;
+
+    color: rgb(197, 18, 18);
+    background-color: rgb(10, 10, 10);
+    border: 3px solid rgb(131, 135, 141);
+    text-align: center;
+    line-height: 17px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.arrow-hours {
+    top: 242px;
+    left: 230px;
+}
+
+.arrow-minutes {
+    top: 242px;
+    left: 680px;
+}
+
+.arrow-seconds {
+    top: 241px;
+    left: 1170px;
+}
+
+.hours {
+    top: 245px;
+    left: 278px;
+    width: 58px;
+}
+
+.minutes {
+    top: 245px;
+    left: 727px;
+    width: 62px;
+}
+
+.seconds {
+    top: 243px;
+    left: 1219px;
+    width: 63px;
+}
+
+#musicButton {
+    padding: 10px 20px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+
+    position: absolute;
+    top: 11px;
+    left: 9px;
+
+    z-index: 10;
+
+    border: 1px solid rgb(166, 180, 197);
+    border-radius: 1px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+}

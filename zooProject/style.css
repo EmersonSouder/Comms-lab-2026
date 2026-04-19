@@ -1,0 +1,22 @@
+body {
+    background-color: aquamarine;
+}
+.enclosure {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    position: absolute;
+}
+#giraffe{
+    left: 30%;
+    top: 20%;
+}
+#monkey{
+    left: 40%;
+    top: 80%;
+    background-color: blue;
+}
+#tiger{
+    left: 70%;
+    top: 50%;
+}

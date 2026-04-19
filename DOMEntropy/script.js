@@ -18,10 +18,8 @@ function clickBox() {
             nextButton.innerText = "me next"
             nextButton.className = "nextButton"
 
-            // 👇 THIS IS THE NEW PART
             nextButton.addEventListener("click", function() {
 
-                // select everything we want to move
                 let allItems = document.querySelectorAll("button, .head-title, .sub-head")
 
                 allItems.forEach(function(item) {
