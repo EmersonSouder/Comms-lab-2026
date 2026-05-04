@@ -1,1 +1,164 @@
-body
+body {
+    margin: 0;
+}
+
+/* intro page */
+
+#title {
+    color: white;
+    font-family: cursive;
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    top: 20%;
+    font-size: 100px;
+}
+
+#startPage {
+    position: fixed;
+    inset: 0;
+    background-color: #87aee0;
+    overflow: hidden;
+}
+
+#startButton {
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 35px;
+}
+
+.leaf {
+    position: absolute;
+    top: -80px;
+    width: 40px;
+    animation-name: fall;
+    animation-timing-function: linear;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.50;
+    }
+}
+
+#fox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+}
+
+#crow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+/* main page */
+
+#foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+#trees {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+#invisibleMountains {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    visibility: hidden;
+}
+
+#mountains {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+#branchCrow {
+    position: absolute;
+    left: 5100px;
+    bottom: 255px;
+    width: 90px;
+}
+
+#walkFox {
+    position: fixed;
+    bottom: 0;
+    left: 60px;
+    width: 140px;
+}
+
+#rock {
+    position: absolute;
+    width: 70px;
+
+}
+
+#rock {
+    position: absolute;
+    left: 2300px;
+    bottom: 80px;
+    width: 180px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#rock:hover {
+    transform: scale(1.15);
+}
+
+#dirtContainer {
+    position: fixed;
+    inset: 0;
+}
+
+#dirtImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#backButton {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+#text {
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    right: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
