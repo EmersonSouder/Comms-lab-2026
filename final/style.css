@@ -74,6 +74,9 @@ body {
     left: 0;
     height: 100vh;
 }
+#foreground-img{
+    height: 100%;
+}
 
 #trees {
     position: fixed;
@@ -98,16 +101,32 @@ body {
 
 #branchCrow {
     position: absolute;
-    left: 5100px;
+    left:91%;
+    top:60%;
+    height: 10%;
+    /* left: 5250px;
     bottom: 255px;
-    width: 90px;
+    width: 90px; */
 }
 
-#walkFox {
+.foxContainer {
+    outline: 0px yellow solid;
     position: fixed;
     bottom: 0;
     left: 60px;
-    width: 140px;
+    /* width: 140px; */
+    height: 27%;
+}
+
+#walkFox {
+    height: 100%;
+}
+#foxCheese {
+    display: none;
+    height: 9%;
+    position: absolute;
+    top: 26%;
+    left: 20%;
 }
 
 #rock {
@@ -153,6 +172,8 @@ body {
     border-radius: 5px;
 }
 
+/* conversation */
+
 #text {
     position: absolute;
     background-color: white;
@@ -161,4 +182,235 @@ body {
     color: rgb(0, 0, 0);
     font-size: 30px;
     font-family: Arial, sans-serif;
+}
+
+#talkButton {
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 150px;
+    left: 650px;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.speechBox {
+    position: fixed;
+    background-color: white;
+    color: black;
+    padding: 12px 16px;
+    border-radius: 30px;
+    font-size: 18px;
+    max-width: 350px;
+    display: none;
+}
+
+#foxSpeech {
+    bottom: 180px;
+    left: 350px;
+}
+
+#crowSpeech {
+    top: 450px;
+    right: 350px;
+}
+
+#crowCheese {
+    position: absolute;
+    transform: scale(0.24);
+    left: 90.79%;
+    top: 56%;
+    height: 10%;
+}
+
+.cheeseFall {
+    top: 85% !important;
+    transition: top 1.5s ease-in;
+}
+
+.foxContainer.foxLeave {
+    animation: foxLeave 3s ease-in-out forwards;
+}
+
+@keyframes foxLeave {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(120vw);
+    }
+}
+
+/* click crow */
+
+#branchCrow {
+    pointer-events: none;
+    cursor: default;
+}
+#branchCrow.clickable:hover {
+    transform: scale(1.05);
+}
+
+/* index4 crow page */
+
+#index4Body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #87ceeb;
+}
+
+/* closeup starts on top */
+
+#closeupLayer {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    transition: transform 1.5s ease-in-out;
+}
+
+#closeupLayer.slideAway {
+    transform: translateX(-100vw);
+}
+
+#closeUp {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+#crowTalkButton {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 22px;
+    font-size: 20px;
+    z-index: 60;
+}
+
+#crowCloseSpeech {
+    top: 90px;
+    left: 90px;
+    display: none;
+    z-index: 60;
+}
+
+#startFollowButton {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 22px;
+    font-size: 20px;
+    display: none;
+    z-index: 60;
+}
+
+/* scroll world */
+
+#flightWorld {
+    position: relative;
+    height: 260vh;
+    width: 100vw;
+    background-color: #87ceeb;
+}
+
+#skyArea {
+    height: 160vh;
+    width: 100vw;
+}
+
+#forestArea {
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#flightMountains,
+#flightTrees,
+#flightForeground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#flightMountains {
+    z-index: 1;
+}
+
+#flightTrees {
+    z-index: 2;
+}
+
+#flightForeground {
+    z-index: 3;
+}
+
+#flyingCrowContainer {
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    width: 180px;
+    z-index: 10;
+}
+
+#flyingCrow {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#crowMouthCheese {
+    display: none;
+    position: absolute;
+    width: 25px; 
+    top: 45%;
+    left: 60%;
+}
+
+.crowLeave {
+    animation: crowLeave 5s ease-in-out forwards;
+}
+
+@keyframes crowLeave {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(120vw, -80vh);
+    }
+}
+
+#cheesePile {
+    position: absolute;
+    width: 170px;
+    bottom: 15px;
+    left: 40%;
+    z-index: 5;
+}
+
+#crowHappySpeech {
+    top: 150px;
+    left: 40%;
+    display: none;
+    z-index: 30;
+}
+
+#finalFollowButton {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    padding: 12px 22px;
+    font-size: 20px;
+    display: none;
+    z-index: 40;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,32 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div id="landscape">
         <img src="images/mountains.png" alt="mountains" id="invisibleMountains">
         <img src="images/mountains.png" alt="mountains" id="mountains">
         <img src="images/trees.png" alt="trees" id="trees">
-        <img src="images/foreground.png" alt="foreground" id="foreground">
-       <a href="index3.html"> <img src="images/rock.png" alt="rock" id="rock"> </a>
-        
+        <div id="foreground">
+            <img src="images/foreground.png" alt="foreground" id="foreground-img">
+            <img src="images/crow.png" alt="crow" id="branchCrow">
+            <!-- add cheese id="crowCheese" and position it by the crow in the same way we did with the crow -->
+            <img src="images/cheese.png" alt="crowCheese" id="crowCheese">
+        </div>
+        <a href="index3.html"> <img src="images/rock.png" alt="rock" id="rock"> </a>
+
     </div>
-    <img src="images/fox.png" alt="fox" id="walkFox">
-    <img src="images/crow.png" alt="crow" id="branchCrow">
-   
+    <div class="foxContainer">
+        <img src="images/fox.png" alt="fox" id="walkFox">
+        <!-- hide this cheese in css -->
+        <img src="images/cheese.png" id="foxCheese">
+
+    </div>
+    <button id="talkButton">talk</button>
+
+    <div id="foxSpeech" class="speechBox"></div>
+    <div id="crowSpeech" class="speechBox"></div>
+
 </body>
+
 </html>
