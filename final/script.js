@@ -37,6 +37,51 @@ if (backButton) {
     });
 }
 
+// race page
+
+// race page
+
+let tortoise = document.querySelector("#raceTortoise");
+let hare = document.querySelector("#raceHare");
+
+let resultText = document.querySelector("#resultText");
+
+let poemButton = document.querySelector("#poemButton");
+let whyButton = document.querySelector("#whyButton");
+
+let whyText = document.querySelector("#whyText");
+
+if (tortoise && hare && resultText && poemButton && whyButton && whyText) {
+
+    tortoise.addEventListener("click", function () {
+        resultText.innerHTML = "CORRECT";
+        resultText.classList.remove("incorrect");
+        resultText.classList.add("correct");
+
+        poemButton.style.display = "block";
+        whyButton.style.display = "none";
+    });
+
+    hare.addEventListener("click", function () {
+        resultText.innerHTML = "INCORRECT";
+        resultText.classList.remove("correct");
+        resultText.classList.add("incorrect");
+
+        whyButton.style.display = "block";
+        poemButton.style.display = "none";
+    });
+
+    whyButton.addEventListener("click", function () {
+        whyText.style.display = "block";
+        whyText.innerHTML = "Because slow and steady wins the race.";
+    });
+
+    poemButton.addEventListener("click", function () {
+        poemButton.style.display = "none";
+        window.location.href = "index7.html";
+    });
+
+}
 
 //Scrolling
 function windowWasScrolled() {
