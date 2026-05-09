@@ -27,6 +27,23 @@ This is a lower section of the homepage that extends the editorial experience by
 ![Screenshot3](images/Screenshot3.png)
 This page is a lower section of the homepage that extends the editorial experience by linking users to music and additional pages inspired by SSENSE.
 
+## Emerson Souder
+## The Fox and the Crow - Don’t allow yourself to be deceived by flattery.
+
+[link](final)
+
+![screenshotintro](images/screenshotintro.png)
+
+This website is an adaptation of the poem “The Fox and the Crow”. It tells the story of a fox that is hungry for food, and smells what could be his next meal.
+
+My project adapts the fable “The Fox and the Crow” into an interactive web experience. In the story, a fox smells food and follows the scent until he finds a crow sitting on a branch with a piece of cheese. The fox flatters the crow by complimenting its feathers and asking to hear its voice. Wanting to impress the fox, the crow opens its mouth, drops the cheese, and the fox steals it. My website translates this interaction through animation, dialogue, text bubbles, and clickable buttons that guide the user through the story. After the fox leaves, the user can explore the crow’s perspective and follow it in search of another meal. The experience eventually loops back to the beginning, reinforcing the central idea that people often repeat the same mistakes instead of learning from them.
+
+![screenshotfox](images/screenshotfox.png)
+This screenshot shows the interaction between the fox and the crow. As seen in the crows mouth is a piece of cheese, which will drop once the dialogue between the animals is complete.
+
+![screenshotcrow](images/screenshotcrow.png)
+This image shows when the crow discovers a pile of cheese, leading him to believe he is set to have meals for a very long time. But this happiness does not last very long as the crow will be fooled once again by flattery.
+
 
 
 
